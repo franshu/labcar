@@ -1,7 +1,6 @@
 * {
 	margin: 0 auto;
 	padding: 0;
-	text-align: center;
 	font-family: 'Raleway-Sans', sans-serif;
 }
 /*NAV*/
@@ -17,5 +16,27 @@
 	background-position: center bottom;
 	background-size: cover;
 	height: 100vh;
-	color: white; 
+	color: #f7b617; 
 }
+/* SEC03*/
+.bg-color{
+	background-color: #f7b617;
+	height: 400px;
+}
+/* SEC03*/
+.bg-conduce{
+	background-image: url('../img/conduce.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	height: 100vh;
+	color: #f7b617; 
+}
+/* SEC04*/
+/*footer*/
+.bg-footer{
+	background-color: #2b2b2b;
+	height: 400px;
+}
+
+
