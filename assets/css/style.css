@@ -8,8 +8,7 @@
 	background-color: white;
 	border-bottom: none;
 }
-
-/* SEC02*/
+/* SEC01*/
 .bg-header{
 	background-image: url('../img/taxi.jpg');
 	background-repeat: no-repeat;
@@ -18,10 +17,22 @@
 	height: 100vh;
 	color: #f7b617; 
 }
-/* SEC03*/
-.bg-color{
+.logo-sec01{
+	width: 30%;
+}
+.caja-sec01{
+	width: 400px;
+	height: 200px;
+	background-color:#f7b617;
+	color: #FFF;
+	padding bottom: 50px;
+
+}
+/* SEC02*/
+.bg-color{ 
 	background-color: #f7b617;
 	height: 400px;
+
 }
 /* SEC03*/
 .bg-conduce{
