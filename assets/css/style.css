@@ -24,12 +24,24 @@
 	width: 30%;
 }
 .caja-sec01{
-	width: 400px;
-	height: 200px;
+	width: 450px;
+	height: 60vh;
 	background-color:#f7b617;
 	color: #FFF;
 	padding bottom: 50px;
-
+}
+#hero .caja-sec01 a{
+	text-decoration-style: none;
+	color: #fff;
+	margin-left: 5%;
+}
+.lineas{
+    margin: 2em 0;
+    position: relative;
+	text-align: center;
+}
+#hero .btn{
+	margin-left: 5%;
 }
 /* SEC02*/
 .bg-color02{ 

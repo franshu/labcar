@@ -1,7 +1,7 @@
 function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"), {
 		zoom: 5,
-		center: {lat: -9.1191427, lng: -77.0349046},
+		center: {lat: -35.4232444, lng: -71.64848039999998},
 		mapTypeControl: false,
 		zoomControl: false,
 		streetViewControl: false
@@ -13,9 +13,7 @@ function initMap() {
 		}
 	}
 
-
-	document.getElementById("encuentrame").addEventListener("click", buscar);
-
+	window.addEventListener("load", buscar);
 	var latitud, longitud;
 	var funcionExito = function(posicion) {
 		latitud = posicion.coords.latitude;
@@ -35,16 +33,37 @@ function initMap() {
 		alert("No encontramos tu ubicación");
 	}
 
+/* AUTOCOMPLETADO */
+     var inputO = (document.getElementById('origen'));
+     var autocomplete = new google.maps.places.Autocomplete(inputO);
+         autocomplete.bindTo('bounds', map);
 
-		var start = document.getElementById('origen');
-		var end = document.getElementById('destino');
+    var inputD = (document.getElementById('destino'));
+     var autocomplete = new google.maps.places.Autocomplete(inputD);
+         autocomplete.bindTo('bounds', map);
 
-		new google.maps.places.Autocomplete(start);
-		new google.maps.places.Autocomplete(end);
+    var directionsService = new google.maps.DirectionsService;//Se comunica con el servicio de indicaciones de la Google Maps API
+     var directionsDisplay = new google.maps.DirectionsRenderer;
 
-		var directionsService = new google.maps.DirectionsService;
-		var directionsDisplay = new google.maps.DirectionsRenderer;
+    document.getElementById('origen').addEventListener('change', onChangeHandler);
+     document.getElementById('destino').addEventListener('change', onChangeHandler);
 
+
+    function trazarRuta(directionsService, directionsDisplay) {
+         directionsService.route({
+             origin: document.getElementById('origen').value,
+             destination: document.getElementById('destino').value,
+             travelMode: 'DRIVING'
+             },
+         function(response, status) {
+              if (status === 'OK') {
+                 directionsDisplay.setDirections(response);
+               } else {
+                 window.alert('No se encontró la ruta ' + status);
+             }
+         });
+     }
+/* calcular ruta */
 		var calcularRuta = function(directionsService,directionsDisplay){
 			directionsService.route({
 				origin: start.value,
@@ -64,6 +83,5 @@ function initMap() {
 			calcularRuta(directionsService,directionsDisplay);
 		};
 
-		document.getElementById("ruta").addEventListener('click', trazarRuta);  
-		initMap();
+		document.getElementById("ruta").addEventListener('click', trazarRuta);  	
 };

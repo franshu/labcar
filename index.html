@@ -42,24 +42,23 @@
   <div class="container-fluid">
     <div class="row">
     	<div class="col-lg-offset-7 col-lg-5 col-md-offset-7 col-md-5 col-sm-5 col-xs-12">	
-    	 <div class="caja-sec01">
+    	 <div class="caja-sec01 pull-right text-center">
     		  <h2>Disfruta del viaje <br>
     			Eres dueño de tu tiempo</h2>
     		  <Small>Viaja con
-              <img src="assets/img/logo-blanco.png" class="img-responsive">
+              <img src="assets/img/logo-blanco.png" class="img-responsive" width="50px">
             </Small>
     	    <div>
 			     <a href="#">REGÍSTRATE</a>
 		      </div>
          <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"">
-		       <div>
-			      <p>O BIEN</p>
-		       </div>
+		       <p class="lineas"> ______ o bien ______</p>
           </div>
-		      <button class="btn btn-default" type="submit">Conviértete en conductor</button>
           </div>
+          <button class="btn btn-default" type="submit">Conviértete en conductor</button>
           <div class="hidden-lg hidden-md col-xs-12">
+
           <button class="btn btn-default" type="submit">Descarga el App</button>
     	   </div>
        </div>
@@ -99,25 +98,23 @@
 <section class="bg-color04" id="tarifas">
   <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h2>Tarifas</h2><br>
-        <small>Consulta las tarifas LabCar aquí</small><br>
-        <div class="row">
-          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h2>Tarifas</h2><br>
+            <small>Consulta las tarifas LabCar aquí</small><br>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
               <img src="assets/img/circulo.png" class="img-responsive" alt="circulo">
-              <input type="text" id="origen" placeholder="Ingrese punto de partida">
+              <input type="text" id="origen" placeholder="origen">
               <img src="assets/img/flecha.png" class="img-responsive" alt="flecha">
-              <input type="text" id="destino" placeholder="Ingrese un destino">
+              <input type="text" id="destino" placeholder="destino">
               <button type="button" id="ruta" class="btn btn-default">¡TRAZA RUTA!</button>
-          </div>
-              
-          <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs" id="map">
-          <!--acá map-->
-          </div>
+            </div>
         </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs" id="map">
+              <!--acá map-->
         </div>
-    </div><!-- /.row -->
-  </div>
+       
+      </div><!-- /.row -->
+    </div>
 </section><!-- /.tarifas -->
  <!--FOOTER -->
 <footer class="bg-footer" id="footer">
@@ -189,9 +186,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- bootstrap -->
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
-  <!-- google maps api -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6ZKTi_-wcmmNQbdpbC7RxFVtfaqP62TU&callback=initMap" type="text/javascript"></script>
   <!-- javaScript -->
   <script src="assets/js/main.js"></script>
+   <!-- google maps api -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6ZKTi_-wcmmNQbdpbC7RxFVtfaqP62TU&callback=initMap" type="text/javascript"></script>
 </body>
 </html>
