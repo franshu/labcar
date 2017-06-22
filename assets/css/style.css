@@ -29,25 +29,39 @@
 
 }
 /* SEC02*/
-.bg-color{ 
+.bg-color02{ 
 	background-color: #f7b617;
-	height: 400px;
-
+	min-height: 80vh;
+	color: #FFF;	
 }
-/* SEC03*/
+.caja-sec02{
+	border: 1px solid white;
+	height: 70vh;
+	margin-top: 5vh;
+}
+/* SEC03*/	
 .bg-conduce{
 	background-image: url('../img/conduce.jpg');
 	background-repeat: no-repeat;
-	background-position: center bottom;
+	background-position: center;
 	background-size: cover;
-	height: 100vh;
+	height: 65vh;
 	color: #f7b617; 
 }
+.caja-sec03{
+	background-color: rgba(0, 0, 0, 0.25);
+  	padding: 5%;
+  	color: #fff;
+  	height: 65vh;
+}
 /* SEC04*/
+.bg-color04{ 
+	background-color: #f7b617;
+	min-height: 80vh;
+	color: #FFF;
+}
 /*footer*/
 .bg-footer{
 	background-color: #2b2b2b;
 	height: 400px;
 }
-
-
