@@ -97,37 +97,26 @@
 
  <!--SEC04 TARIFAS -->
 <section class="bg-color04" id="tarifas">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h2>Tarifas</h2><br>
         <small>Consulta las tarifas LabCar aquí</small><br>
         <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <img src="assets/img/circulo.png" class="img-responsive" alt="circulo">
-              </div>
-              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-                <input type="text" id="origen" placeholder="Ingrese punto de partida">
-              </div>
-            </div>
-            <div class="row inputs">
-              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <img src="assets/img/flecha.png" class="img-responsive" alt="flecha">
-              </div>
-              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
-                <input type="text" id="destino" placeholder="Ingrese un destino">
-              </div>
-            </div>
-            <button type="button" id="ruta" class="btn btn-default">¡TRAZA RUTA!</button>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+              <img src="assets/img/circulo.png" class="img-responsive" alt="circulo">
+              <input type="text" id="origen" placeholder="Ingrese punto de partida">
+              <img src="assets/img/flecha.png" class="img-responsive" alt="flecha">
+              <input type="text" id="destino" placeholder="Ingrese un destino">
+              <button type="button" id="ruta" class="btn btn-default">¡TRAZA RUTA!</button>
           </div>
-        
-
-
+              
+          <div class="col-lg-6 col-md-6 col-sm-12 hidden-xs" id="map">
+          <!--acá map-->
+          </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <!-- /.aca map-->
         </div>
-    </div>
+    </div><!-- /.row -->
   </div>
 </section><!-- /.tarifas -->
  <!--FOOTER -->
@@ -177,8 +166,8 @@
           </div>
            <!--download app -->
           <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <img src="assets/img/app-store.png" class="img-responsive store" alt="appstore">
-            <img src="assets/img/google-play.png" class="img-responsive store" alt="googleplay">
+            <img src="assets/img/app-store.png" class="img-responsive store" width="120px" alt="appstore">
+            <img src="assets/img/google-play.png" class="img-responsive store" width="120px" alt="googleplay">
           </div>
         </div>
         <hr>
@@ -194,8 +183,15 @@
 
 
   <!--Script-->
+  <!-- font awesome -->
   <script src="https://use.fontawesome.com/7c2c73414b.js"></script>
+   <!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- bootstrap -->
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  <!-- google maps api -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6ZKTi_-wcmmNQbdpbC7RxFVtfaqP62TU&callback=initMap" type="text/javascript"></script>
+  <!-- javaScript -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
