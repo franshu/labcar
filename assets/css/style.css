@@ -8,6 +8,9 @@
 	background-color: white;
 	border-bottom: none;
 }
+.navbar .logo-brand{
+	width: 60%;
+}
 /* SEC01*/
 .bg-header{
 	background-image: url('../img/taxi.jpg');
@@ -55,13 +58,22 @@
   	height: 65vh;
 }
 /* SEC04*/
+#footter{
+	text-decoration-style: none;
+	color: #fff;
+}
 .bg-color04{ 
 	background-color: #f7b617;
 	min-height: 80vh;
-	color: #FFF;
 }
 /*footer*/
 .bg-footer{
 	background-color: #2b2b2b;
+	color: #fff;
 	height: 400px;
+
+}
+.bg-footer .logo-footer {
+	margin-top: 5vh;
+	width: 70vh;
 }

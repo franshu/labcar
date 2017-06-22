@@ -1,4 +1,4 @@
-vv<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -21,7 +21,7 @@ vv<!DOCTYPE html>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-       <img alt="Brand" src="assets/img/logo.png"
+       <img alt="Brand" src="assets/img/logo.png" class="logo-brand"
        ></a>
     </div>
 
@@ -96,29 +96,105 @@ vv<!DOCTYPE html>
 </section><!-- /.conduce -->
 
  <!--SEC04 TARIFAS -->
-<section class="bg-color04">
+<section class="bg-color04" id="tarifas">
   <div class="container">
     <div class="row">
-      <!-- /.aca map-->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h2>Tarifas</h2><br>
+        <small>Consulta las tarifas LabCar aquí</small><br>
+        <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <img src="assets/img/circulo.png" class="img-responsive" alt="circulo">
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <input type="text" id="origen" placeholder="Ingrese punto de partida">
+              </div>
+            </div>
+            <div class="row inputs">
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <img src="assets/img/flecha.png" class="img-responsive" alt="flecha">
+              </div>
+              <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <input type="text" id="destino" placeholder="Ingrese un destino">
+              </div>
+            </div>
+            <button type="button" id="ruta" class="btn btn-default">¡TRAZA RUTA!</button>
+          </div>
+        
+
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <!-- /.aca map-->
+        </div>
     </div>
   </div>
 </section><!-- /.tarifas -->
  <!--FOOTER -->
-<footer class="bg-footer">
-  <div class="container">
-    <div class="row">
-      <i class="fa fa-facebook-official" aria-hidden="true"></i>
-      <i class="fa fa-twitter-square" aria-hidden="true"></i>
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-      <i class="fa fa-apple" aria-hidden="true"></i>
-      <i class="fa fa-play" aria-hidden="true"></i>
-    </div>
-  </div>
+<footer class="bg-footer" id="footer">
+   <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 logo-footer">
+            <img src="assets/img/logo-blanco.png" class="img-responsive pull-left" alt="logo">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+        <!--redes sociales -->
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 socialmedia">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i class="fa fa-apple" aria-hidden="true"></i>
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </div>
+          <!--lista 1 -->
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <ul class="list-unstyled">
+              <li><a href="#">Viaja</a></li>
+              <li><a href="#">Conduce</a></li>
+              <li><a href="#">Ciudades</a></li>
+              <li><a href="#">Tarifas</a></li>
+              <li><a href="#">Entregas</a></li>
+              <li><a href="#">Cómo funciona</a></li>
+              <li><a href="#">Países</a></li>
+              <li><a href="#">Seguridad</a></li>
+            </ul>
+          </div>
+          <!--lista 2 -->
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <ul class="list-unstyled">
+              <li><a href="#">Oportunidades</a></li>
+              <li><a href="#">Nuestra historia</a></li>
+              <li><a href="#">API de LabCar</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Desarrolladores</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Laboratoria</a></li>
+              <li><a href="#">Coders</a></li>
+            </ul>
+          </div>
+           <!--download app -->
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <img src="assets/img/app-store.png" class="img-responsive store" alt="appstore">
+            <img src="assets/img/google-play.png" class="img-responsive store" alt="googleplay">
+          </div>
+        </div>
+        <hr>
+         <!--pie-->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+
+          <p>© 2017 LabCar technologies Inc.</p>
+        </div>
+      </div>
+    </footer>
 
 </footer> <!-- /.footer -->
 
 
   <!--Script-->
+  <script src="https://use.fontawesome.com/7c2c73414b.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
 </body>
